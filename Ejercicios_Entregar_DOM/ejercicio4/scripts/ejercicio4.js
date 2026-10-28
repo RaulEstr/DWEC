@@ -1,24 +1,39 @@
-// let fecha = prompt("Introduce una fecha en formato correcto (dd/mm/aaaa):");
-let fecha = "11/01/2001"
+// Variables
+let fecha = prompt("Introduce una fecha en formato correcto (dd/mm/aaaa):");
 let dia;
 let mes;
 let anio;
 
+// Constantes
 const ANIOSMOSTRAR = 5;
+const DIASSEMANA = ["Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado"];
 
+// Div principal
 let miDiv = document.createElement("div");
 document.body.appendChild(miDiv);
-miDiv.style.textAlign = "center";
 
+// Tuitulo
 let titulo = document.createElement("p");
 titulo.textContent = "VALIDANDO FECHAS";
 miDiv.appendChild(titulo);
 
+// Fecha
 let fechaIntroducida = document.createElement("p");
 fechaIntroducida.textContent = "Fecha introducida: " + fecha;
 miDiv.appendChild(fechaIntroducida);
 
+// Estilo del div y del titulo
+miDiv.style.textAlign = "center";
+titulo.style.fontWeight = "bold";
+titulo.style.textDecoration = "underline";
+
 if(fechaValida()) {
+    // Texto de "Ese mismo dia en..."
+    let eseDia = document.createElement("p");
+    miDiv.appendChild(eseDia);
+    eseDia.textContent = "Ese mismo día en...";
+
+    // Tabla con líneas y primeros td
     let tabla = document.createElement("table");
     miDiv.appendChild(tabla);
     let linea1 = document.createElement("tr");
@@ -34,20 +49,33 @@ if(fechaValida()) {
     linea2.appendChild(titulo2);
     titulo2.textContent = "era un...";
 
-    for(let i = 0; i < ANIOSMOSTRAR; i++) {
-        
+    // Bucle para añadir tds dependiendo de la constante ANIOSMOSTRAR
+    for(let i = 1; i <= ANIOSMOSTRAR; i++) {
+        // Año
+        let elanio = document.createElement("td");
+        linea1.appendChild(elanio);
+        elanio.textContent = anio - ANIOSMOSTRAR + i;
+
+        // Dia de la semana
+        let eraun = document.createElement("td");
+        linea2.appendChild(eraun);
+        let date = new Date(mes + "/" + dia + "/" + (anio - ANIOSMOSTRAR + i));
+        eraun.textContent = DIASSEMANA[date.getDay()];
     }
 
-
-    // estilos
+    // Estilo de la tabla
     tabla.style.border = "1px solid black";
+    tabla.style.marginLeft = "auto";
+    tabla.style.marginRight = "auto";
 }
 else {
+    // Indicar que la fecha no es correcta
     let valida = document.createElement("p");
     valida.textContent = "La fecha no es correcta";
     miDiv.appendChild(valida);
 }
 
+// Funcion que comprueba que la fecha sea correcta
 function fechaValida() {
     if(fecha[2] != "/" || fecha[5] != "/") {
         return false;
