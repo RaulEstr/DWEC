@@ -55,6 +55,9 @@ function validar() {
         }
         // Un br para que cada tabla aparezca en una linea nueva
         contenido.appendChild(document.createElement("br"));
+
+        // Vacio el input
+        document.getElementById("texto").value = "";
     }
     
 }
