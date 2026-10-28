@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #error1, #error2, #error3 {
+            color: red;
+        }
+        table {
+            border: 1px solid black;
+        }
+        input {
+            width: 300px;
+        }
+        label {
+            display: block;
+            text-align: right;
+            width: 150px;
+        }
+        button {
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio3 - Discos</h1>
+    <table>
+        <caption>Introducir un disco</caption>
+        <tr>
+            <td><label for="nombre">Nombre del disco: </label></td>
+            <td><input type="text" id="nombre"></td>
+        </tr>
+        <tr>
+            <td><label for="autor">Autor: </label></td>
+            <td><input type="text" id="autor"></td>
+        </tr>
+        <tr>
+            <td><label for="anio">Año de publicacion: </label></td>
+            <td><input type="text" id="anio"></td>
+        </tr>
+        <tr>
+            <td><label for="genero">Género: </label></td>
+            <td>
+                <select id="genero">
+                    <option value="rock">Rock</option>
+                    <option value="pop">Pop</option>
+                    <option value="punk">Punk</option>
+                    <option value="indie">Indie</option>
+                </select>
+            </td>
+        </tr>
+            <tr>
+            <td><label for="localizacion">Estantería</label></td>
+            <td><input type="number" id="localizacion"></td>
+        </tr>
+        <tr>
+            <td colspan=2><button type="button" onclick="aniadir()">Añadir</button></td>
+        </tr>
+        <tr><td colspan=2><p id="error1"></p></td></tr>
+    </table>
+    <br>
+    <table>
+        <caption>Actualizar la estantería</caption>
+        <tr>
+            <td><label for="nombre2">Nombre del disco: </label></td>
+            <td><input type="text" id="nombre2"></td>
+        </tr>
+        <tr>
+            <td><label for="nuevaLocalizacion">Nueva localizacion: </label></td>
+            <td><input type="number" id="nuevaLocalizacion"></td>
+        </tr>
+        <tr>
+            <td colspan=2><button type="button" onclick="cambiarEstanteria()">Cambiar de estantería</button></td>
+        </tr>
+        <tr><td colspan=2><p id="error2"></p></td></tr>
+    </table>
+    <br>
+    <table>
+        <caption>Cambiar el estado</caption>
+        <tr>
+            <td><label for="nombre3">Nombre del disco: </label></td>
+            <td><input type="text" id="nombre3"></td>
+        </tr>
+        <tr>
+            <td colspan=2><button type="button" onclick="cambiarPrestado()">Cambiar estado de prestado</button></td>
+        </tr>
+        <tr><td colspan=2><p id="error3"></p></td></tr>
+    </table>
+    <br>
+    <div id="contenido"></div>
+    <script type="text/javascript" src="scripts/ejercicio3.js"></script>
+</body>
+</html>

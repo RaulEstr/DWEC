@@ -1,0 +1,49 @@
+* { 
+   box-sizing: border-box; 
+}
+
+h1{
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#principal {
+    column-count: 3;
+    text-align: center;
+}
+
+#victorias {
+    text-align: center;
+}
+
+#menuJuego {
+    text-align: center;
+}
+
+#tragaperras, #ppt, #adivina {
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+button {
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    border: transparent;
+    border-radius: 10px;
+    background-color: aqua;
+    cursor: pointer;
+    box-shadow: 2px 2px 1px gray;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+}

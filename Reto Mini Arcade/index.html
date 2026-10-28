@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minijuegos</title>
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>JUEGOS</h1>
+    <div id="principal"> 
+        <div id="tragaperras">
+            <h2>TRAGAPERRAS</h2>
+            <img src="imgs/tragaperras.webp" onclick="cargarJuego(1)" height="200" alt="Imagen de una máquina tragaperras">
+            <br>
+            <button onclick="cargarJuego(1)">JUGAR</button>
+            <h3 id="victorias1">Victorias: 0</h3>
+        </div>
+        <div id="ppt">
+            <h2>PIEDRA PAPEL O TIJERAS</h2>
+            <img src="imgs/ppt.avif" onclick="cargarJuego(2)" height="200" alt="Imagen de 3 manos con Piedra Pepel Tijera">
+            <br>
+            <button onclick="cargarJuego(2)">JUGAR</button>
+            <h3 id="victorias2">Victorias: 0</h3>
+        </div>
+        <div id="adivina">
+            <h2>ADIVINA EL NUMERO</h2>
+            <img src="imgs/adivina.webp" onclick="cargarJuego(3)" height="200" alt="Imagen de una máquina tragaperras">
+            <br>
+            <button onclick="cargarJuego(3)">JUGAR</button>
+            <h3 id="victorias3">Victorias: 0</h3>
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>

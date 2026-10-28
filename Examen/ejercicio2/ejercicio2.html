@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Gestión jugadores</h1>
+    <table>
+        <tr>
+            <td><label>Nombre del jugador: </label></td>
+            <td><input type="text" id="nombre"></td>
+            <td id="nombreLinea"></td>
+        </tr>
+        <tr>
+            <td><label>Puntuación del jugador: </label></td>
+            <td><input type="number" id="puntuacion"></td>
+            <td id="puntuacionLinea"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button type="button" onclick="guardar()">Guardar jugador</button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button type="button" onclick="verJugadores()">Ver jugadores</button></td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="scripts/ejercicio2.js"></script>
+</body>
+</html>

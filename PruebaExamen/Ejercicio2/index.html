@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table, tr, td {
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Agenda de Citas</h1>
+    <form>
+        <table>
+            <tr>
+                <td><label for="nombre">Nombre de la cita: </label></td>
+                <td><input type="text" id="nombre"></td>
+            </tr>
+            <tr>
+                <td><label for="fecha">Fecha de la cita: </label></td>
+                <td><input type="date" id="fecha"></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="guardar()">Guardar cita</button></td>
+                <td><button type="button" onclick="ver()">Ver agenda</button></td>
+            </tr>
+        </table>
+    </form>
+    <script type="text/javascript" src="scripts/ejercicio2.js"></script>
+</body>
+</html>
