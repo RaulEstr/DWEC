@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 5px;
+            margin: 5px;
+        }
+        legend {
+            background-color: gray;
+            color: white;
+        }
+        fieldset {
+            background-color: lightgray;
+        }
+        form {
+            display: table;
+        }
+        label {
+            display: table-cell;
+        }
+        input {
+            display: table-cell;
+        }
+        input[type="submit"] {
+            width: 95%;
+        }
+    </style>
+</head>
+<body>
+    <h1>The fieldset element + CSS</h1>
+    <form id="formu">
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="nombre">First name:</label><input type="text" id="nombre" required><br>
+            <label for="nombre">Last name:</label><input type="text" id="apellido" required><br>
+            <label for="nombre">Email:</label><input type="email" id="email" required><br>
+            <label for="nombre">Birthday:</label><input type="date" id="nacimiento" required><br><br>
+            <input type="submit" id="enviar" value="Submit">
+        </fieldset>
+    </form>
+    <script type="text/javascript" src="scripts/ejercicio3.js" defer></script>
+</body>
+</html>
