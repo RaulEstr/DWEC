@@ -12,8 +12,10 @@ function comprobarEdad() {
     }
     else if(edad.value < 18) {
         edad.style.border = "5px solid red";
+        // edad.classList.toggle("rojo");
     }
     else {
         edad.style.border = "5px solid green";
+        // edad.classList.toggle("rojo");
     }
 }
