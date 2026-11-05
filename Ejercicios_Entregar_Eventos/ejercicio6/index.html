@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #rojo, .rojo {
+            background-color: red;
+        }
+        #verde, .verde {
+            background-color: green;
+        }
+        #azul, .azul {
+            background-color: blue;
+        }
+        #blanco, .blanco {
+            background-color: white;
+        }
+        #negro, .negro {
+            background-color: black;
+        }
+        #amarillo, .amarillo {
+            background-color: yellow;
+        }
+        #colores table tr td {
+            width: 200px;
+            height: 50px;
+        }
+        #pinturitas table, #colores table {
+            border-collapse: collapse;
+        }
+        #pinturitas table, #pinturitas tr, #pinturitas td, #colores table, #colores tr, #colores td {
+            border:1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pinturitas</h1>
+    <div id="colores">
+        <table>
+            <tr>
+                <td id="rojo"></td>
+                <td id="verde"></td>
+                <td id="azul"></td>
+                <td id="amarillo"></td>
+                <td id="blanco"></td>
+                <td id="negro"></td>
+            </tr>
+            <tr>
+                <td colspan="6">Color seleccionado: blanco</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div id="pinturitas"></div>
+    <script type="text/javascript" src="scripts/ejercicio6.js" defer></script>
+</body>
+</html>
