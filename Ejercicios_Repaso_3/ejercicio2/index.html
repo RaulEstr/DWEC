@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 5px;
+            margin: 5px;
+        }
+        legend {
+            background-color: gray;
+            color: white;
+        }
+        fieldset {
+            background-color: lightgray;
+        }
+        form {
+            display: table;
+        }
+        label {
+            display: table-cell;
+        }
+        input {
+            display: table-cell;
+        }
+        fieldset input[type="submit"] {
+            width: 95%;
+        }
+        table, tr, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Datos</legend>
+            <label for="nombre">Nombre: </label><input type="text" id="nombre"><br>
+            <label for="telefono">Telefono: </label><input type="text" id="telefono"><br>
+            <label for="email">Email: </label><input type="text" id="email"><br><br>
+            <input type="submit" id="enviar">
+        </fieldset> 
+    </form>
+
+    <table id="tabla">
+        <tr>
+            <th>NOMBRE</th>
+            <th>EMAIL</th>
+            <th>TELEFONO</th>
+            <th>ACCIONES</th>
+        </tr>
+    </table>
+    <div style="display: none;" id="capa"></div>
+    <script type="text/javascript" src="scripts/ejercicio2.js" defer></script>
+</body>
+</html>
