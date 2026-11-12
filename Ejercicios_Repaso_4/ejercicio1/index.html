@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 5px;
+            margin: 5px;
+        }
+        legend {
+            background-color: gray;
+            color: white;
+        }
+        fieldset {
+            background-color: lightgray;
+        }
+        form {
+            display: table;
+        }
+        label {
+            display: table-cell;
+        }
+        input {
+            display: table-cell;
+        }
+        fieldset input[type="submit"] {
+            width: 95%;
+        }
+        table, tr, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+        #error {
+            display: none;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form id="formulario">
+        <fieldset>
+            <legend>Crear tareas</legend>
+            <label for="nombre">Nombre </label><input id="nombre" type="text" placeholder="Tarea..." size="50">
+            <label for="prioridad">Prioridad </label>
+            <select id="prioridad">
+                <option value="baja" selected>Baja</option>
+                <option value="media">Media</option>
+                <option value="alta">Alta</option>
+            </select>
+            <input type="submit" id="submit" value="Añadir tarea">
+            <p id="error"></p>
+        </fieldset>
+    </form>
+
+    <select id="filtro">
+        <option value="todas">Todas</option>
+        <option value="pendientes">Pendientes</option>
+        <option value="completadas">Completadas</option>
+    </select>
+
+    <h2>Tareas</h2>
+    <div id="tareas">
+        
+    </div>
+    <script type="text/javascript" src="scripts/ejercicio1.js" defer></script>
+</body>
+</html>
