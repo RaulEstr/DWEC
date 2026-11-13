@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo/estilo.css">
+</head>
+<body>
+    <button style="display: none; z-index: 100; position: absolute;" type="button" id="botonReiniciar">Reiniciar</button>
+    <div style="display:none;" id="cuadrados"></div>
+    <form id="formulario">
+        <fieldset>
+            <legend>Cuadrado 1</legend>
+            <label for="ancho1">Ancho: </label>
+            <input type="number" id="ancho1" required><br>
+            <label for="alto1">Alto: </label>
+            <input type="number" id="alto1" required><br>
+            <label for="top1">Top: </label>
+            <input type="number" id="top1" required><br>
+            <label for="left1">Left: </label>
+            <input type="number" id="left1" required><br>
+            <label for="color1">Color: </label>
+            <input type="color" id="color1">
+            <p style="display: none;" id="error1"></p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Cuadrado 2</legend>
+            <label for="ancho2">Ancho: </label>
+            <input type="number" id="ancho2" required><br>
+            <label for="alto2">Alto: </label>
+            <input type="number" id="alto2" required><br>
+            <label for="top2">Top: </label>
+            <input type="number" id="top2" required><br>
+            <label for="left2">Left: </label>
+            <input type="number" id="left2" required><br>
+            <label for="color2">Color: </label>
+            <input type="color" id="color2">
+            <p style="display: none;" id="error2"></p>
+        </fieldset>
+        <input type="submit" value="Crear cuadrados" id="botonCrear">
+    </form>
+    <script type="text/javascript" src="scripts/examen.js" defer></script>
+</body>
+</html>
