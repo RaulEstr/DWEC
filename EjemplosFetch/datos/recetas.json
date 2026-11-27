@@ -1,0 +1,208 @@
+{
+  "recetas": [
+    {
+      "id": 1,
+      "nombre": "Tortilla de patata",
+      "tipo": "Española",
+      "ingredientes": [
+        "Patatas",
+        "Cebolla",
+        "Huevos",
+        "Sal",
+        "Aceite"
+      ],
+      "dificultad": "media"
+    },
+    {
+      "id": 2,
+      "nombre": "Huevo a la plancha",
+      "tipo": "General",
+      "ingredientes": [
+        "Huevo",
+        "Sal",
+        "Aceite"
+      ],
+      "dificultad": "baja"
+    },
+    {
+      "id": 3,
+      "nombre": "Colacao",
+      "tipo": "Española",
+      "ingredientes": [
+        "Colacao",
+        "Leche"
+      ],
+      "dificultad": "baja"
+    },
+    {
+      "id": 4,
+      "nombre": "Pollo guisado",
+      "tipo": "Generica",
+      "ingredientes": [
+        "Pollo",
+        "Verduras"
+      ],
+      "dificultad": "media"
+    },
+    {
+      "nombre": "Pollo con verduras",
+      "tipo": "Generica",
+      "ingredientes": [
+        "Pollo",
+        "Verduras"
+      ],
+      "dificultad": "media",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "nombre": "Pollo guisado",
+      "tipo": "Generica",
+      "ingredientes": [
+        "Pollo",
+        "Verduras"
+      ],
+      "dificultad": "UWU"
+    },
+    {
+      "id": 7,
+      "nombre": "Pollo guisado",
+      "tipo": "Generica",
+      "ingredientes": [
+        "Pollo",
+        "Verduras"
+      ],
+      "dificultad": "media"
+    },
+    {
+      "nombre": "Colacao",
+      "tipo": "Española",
+      "ingredientes": [
+        "Colacao",
+        "Leche"
+      ],
+      "dificultad": "baja",
+      "id": 8
+    },
+    {
+      "nombre": "Colacao",
+      "tipo": "Española",
+      "ingredientes": [
+        "Colacao",
+        "Leche"
+      ],
+      "dificultad": "baja",
+      "id": 9
+    },
+    {
+      "nombre": "Colacao",
+      "tipo": "Española",
+      "ingredientes": [
+        "Colacao",
+        "Leche"
+      ],
+      "dificultad": "baja",
+      "id": 10
+    },
+    {
+      "nombre": "Colacao",
+      "tipo": "Española",
+      "ingredientes": [
+        "Colacao",
+        "Leche"
+      ],
+      "dificultad": "baja",
+      "id": 11
+    },
+    {
+      "nombre": "Colacao",
+      "tipo": "Española",
+      "ingredientes": [
+        "Colacao",
+        "Leche"
+      ],
+      "dificultad": "baja",
+      "id": 12
+    },
+    {
+      "nombre": "Colacao",
+      "tipo": "Española",
+      "ingredientes": [
+        "Colacao",
+        "Leche"
+      ],
+      "dificultad": "baja",
+      "id": 13
+    },
+    {
+      "nombre": "Colacao",
+      "tipo": "Española",
+      "ingredientes": [
+        "Colacao",
+        "Leche"
+      ],
+      "dificultad": "baja",
+      "id": 14
+    },
+    {
+      "nombre": "Colacao",
+      "tipo": "Española",
+      "ingredientes": [
+        "Colacao",
+        "Leche"
+      ],
+      "dificultad": "baja",
+      "id": 15
+    },
+    {
+      "nombre": "Colacao",
+      "tipo": "Española",
+      "ingredientes": [
+        "Colacao",
+        "Leche"
+      ],
+      "dificultad": "baja",
+      "id": 16
+    },
+    {
+      "nombre": "Colacao",
+      "tipo": "Española",
+      "ingredientes": [
+        "Colacao",
+        "Leche"
+      ],
+      "dificultad": "baja",
+      "id": 17
+    },
+    {
+      "nombre": "Colacao",
+      "tipo": "Española",
+      "ingredientes": [
+        "Colacao",
+        "Leche"
+      ],
+      "dificultad": "baja",
+      "id": 18
+    },
+    {
+      "nombre": "Colacao",
+      "tipo": "Española",
+      "ingredientes": [
+        "Colacao",
+        "Leche"
+      ],
+      "dificultad": "baja",
+      "id": 19
+    },
+    {
+      "nombre": "Colacao",
+      "tipo": "Española",
+      "ingredientes": [
+        "Colacao",
+        "Leche"
+      ],
+      "dificultad": "baja",
+      "id": 20
+    }
+  ]
+}
